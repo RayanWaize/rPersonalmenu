@@ -149,7 +149,7 @@ end)
 
 function RefreshMoney()
 	if ESX.PlayerData.job ~= nil and ESX.PlayerData.job.grade_name == 'boss' then
-		ESX.TriggerServerCallback('five_society:getSocietyMoney', function(money)
+		ESX.TriggerServerCallback('esx_society:getSocietyMoney', function(money)
 			societymoney = ESX.Math.GroupDigits(money)
 		end, ESX.PlayerData.job.name)
 	end
@@ -157,7 +157,7 @@ end
 
 function RefreshMoney2()
 	if ESX.PlayerData.job2 ~= nil and ESX.PlayerData.job2.grade_name == 'boss' then
-		ESX.TriggerServerCallback('five_society:getSocietyMoney', function(money)
+		ESX.TriggerServerCallback('esx_society:getSocietyMoney', function(money)
 			societymoney2 = ESX.Math.GroupDigits(money)
 		end, ESX.PlayerData.job2.name)
 	end
